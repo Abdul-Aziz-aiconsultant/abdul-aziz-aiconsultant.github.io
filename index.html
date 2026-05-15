@@ -496,7 +496,7 @@ function type(){
   const cur=roles[ri],cursor='<span class="cursor"></span>';
   del?(ci--,tw.innerHTML=cur.slice(0,ci)+cursor,ci===0&&(del=false,ri=(ri+1)%roles.length)):
      (ci++,tw.innerHTML=cur.slice(0,ci)+cursor,ci===cur.length&&(del=true,setTimeout(type,2000),true)||false)
-  setTimeout(type,del?42:88);
+  setTimeout(type,del?80:188);
 }
 type();
 
